@@ -1,0 +1,115 @@
+{
+  "computedColumns": [], 
+  "engineParams": {
+    "hive": {
+      "addDkuUdf": false, 
+      "executionEngine": "HIVECLI_LOCAL", 
+      "hiveconf": [], 
+      "inheritConf": "default", 
+      "skipPrerunValidate": false
+    }, 
+    "impala": {
+      "forceStreamMode": true
+    }, 
+    "lowerCaseSchemaIfEngineRequiresIt": true, 
+    "sparkSQL": {
+      "overwriteOutputSchema": false, 
+      "pipelineAllowMerge": true, 
+      "pipelineAllowStart": true, 
+      "readParams": {
+        "map": {}
+      }, 
+      "sparkConfig": {
+        "conf": [], 
+        "inheritConf": "default"
+      }, 
+      "useGlobalMetastore": false
+    }
+  }, 
+  "enlargeYourBits": true, 
+  "globalCount": true, 
+  "keys": [
+    {
+      "column": "customer_id", 
+      "type": "string"
+    }
+  ], 
+  "outputColumnNameOverrides": {
+    "order_date_min": "first_order_date"
+  }, 
+  "postFilter": {
+    "distinct": false, 
+    "enabled": false
+  }, 
+  "preFilter": {
+    "distinct": false, 
+    "enabled": false
+  }, 
+  "values": [
+    {
+      "avg": false, 
+      "column": "order_date", 
+      "count": false, 
+      "countDistinct": false, 
+      "first": false, 
+      "last": false, 
+      "max": false, 
+      "min": true, 
+      "sum": false, 
+      "sum2": false, 
+      "type": "string"
+    }, 
+    {
+      "avg": true, 
+      "column": "pages_visited", 
+      "count": false, 
+      "countDistinct": false, 
+      "first": false, 
+      "last": false, 
+      "max": false, 
+      "min": false, 
+      "sum": false, 
+      "sum2": false, 
+      "type": "bigint"
+    }, 
+    {
+      "avg": false, 
+      "column": "order_id", 
+      "count": false, 
+      "countDistinct": false, 
+      "first": false, 
+      "last": false, 
+      "max": false, 
+      "min": false, 
+      "sum": false, 
+      "sum2": false, 
+      "type": "string"
+    }, 
+    {
+      "avg": false, 
+      "column": "tshirt_category", 
+      "count": false, 
+      "countDistinct": false, 
+      "first": false, 
+      "last": false, 
+      "max": false, 
+      "min": false, 
+      "sum": false, 
+      "sum2": false, 
+      "type": "string"
+    }, 
+    {
+      "avg": false, 
+      "column": "total", 
+      "count": false, 
+      "countDistinct": false, 
+      "first": false, 
+      "last": false, 
+      "max": false, 
+      "min": false, 
+      "sum": true, 
+      "sum2": false, 
+      "type": "double"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "explorationFilters": [],
+  "maxProcessedMemTableBytes": -1,
+  "analysisColumnData": {},
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "globalSearchQuery": "",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "origin": "PREPARE_RECIPE",
+  "sorting": [],
+  "coloring": {
+    "individualColumns": [],
+    "scheme": "MEANING_AND_STATUS",
+    "valueColoringMode": "HASH"
+  },
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "matching": "FULL_STRING",
+        "stopAfterFirstMatch": false,
+        "appliesTo": "SINGLE_COLUMN",
+        "normalization": "EXACT",
+        "columns": [
+          "tshirt_category"
+        ],
+        "mapping": [
+          {
+            "to": "White T-Shirt M",
+            "from": "Wh Tshirt M"
+          },
+          {
+            "to": "Black T-Shirt M",
+            "from": "Bl Tshirt M"
+          },
+          {
+            "to": "White T-Shirt F",
+            "from": "Wh Tshirt F"
+          },
+          {
+            "to": "Black T-Shirt F",
+            "from": "Bl Tshirt F"
+          }
+        ],
+        "output": ""
+      },
+      "type": "FindReplace",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "outCol": "",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "order_date"
+        ],
+        "timezone_id": "UTC",
+        "lang": "auto",
+        "formats": [
+          "yyyy/MM/dd"
+        ]
+      },
+      "type": "DateParser",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "expression": "tshirt_price * tshirt_quantity",
+        "column": "total"
+      },
+      "type": "CreateColumnWithGREL",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "appliesTo": "COLUMNS",
+        "columns": [
+          "tshirt_quantity",
+          "tshirt_price"
+        ],
+        "keep": false
+      },
+      "type": "ColumnsSelector",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    }
+  ],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "previewMode": "ALL_ROWS",
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false,
+    "selection": {
+      "targetRatio": 0.02,
+      "maxRecords": 10000,
+      "maxStoredBytes": 104857600,
+      "partitionSelectionMethod": "ALL",
+      "withinFirstN": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "latestPartitionsN": 1,
+      "maxReadUncompressedBytes": -1,
+      "filter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  }
+}

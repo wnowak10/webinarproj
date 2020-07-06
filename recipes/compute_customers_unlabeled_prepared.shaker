@@ -1,0 +1,174 @@
+{
+  "explorationFilters": [],
+  "maxProcessedMemTableBytes": -1,
+  "analysisColumnData": {},
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "globalSearchQuery": "",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "origin": "PREPARE_RECIPE",
+  "sorting": [],
+  "coloring": {
+    "individualColumns": [],
+    "scheme": "MEANING_AND_STATUS",
+    "valueColoringMode": "HASH"
+  },
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "outCol": "",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "birthdate"
+        ],
+        "timezone_id": "UTC",
+        "lang": "auto",
+        "formats": [
+          "yyyy/MM/dd"
+        ]
+      },
+      "type": "DateParser",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "input2": "first_order_date",
+        "reverse": false,
+        "outputUnit": "YEARS",
+        "compareTo": "COLUMN",
+        "output": "age_first_order",
+        "input1": "birthdate"
+      },
+      "type": "DateDifference",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "clear": true,
+        "lowerBound": "9.000",
+        "columns": [
+          "age_first_order"
+        ],
+        "upperBound": "108.0"
+      },
+      "type": "MinMaxProcessor",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "appliesTo": "COLUMNS",
+        "columns": [
+          "first_order_date",
+          "birthdate"
+        ],
+        "keep": false
+      },
+      "type": "ColumnsSelector",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "column": "user_agent"
+      },
+      "type": "UserAgentClassifier",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "appliesTo": "COLUMNS",
+        "columns": [
+          "user_agent",
+          "user_agent_type",
+          "user_agent_category",
+          "user_agent_version",
+          "user_agent_osversion",
+          "user_agent_osflavor"
+        ],
+        "keep": false
+      },
+      "type": "ColumnsSelector",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "extract_countrycode3": false,
+        "extract_postalcode": false,
+        "extract_country": true,
+        "extract_geopoint": true,
+        "extract_timezone": false,
+        "inCol": "ip_address",
+        "outColPrefix": "ip_address_",
+        "extract_city": false,
+        "extract_countrycode": false,
+        "extract_continentcode": false,
+        "extract_latlng": false,
+        "extract_region": false
+      },
+      "type": "GeoIPResolver",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "appliesTo": "COLUMNS",
+        "columns": [
+          "count",
+          "total_sum",
+          "ip_address"
+        ],
+        "keep": false
+      },
+      "type": "ColumnsSelector",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    }
+  ],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "previewMode": "ALL_ROWS",
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false,
+    "selection": {
+      "targetRatio": 0.02,
+      "maxRecords": 10000,
+      "maxStoredBytes": 104857600,
+      "partitionSelectionMethod": "ALL",
+      "withinFirstN": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "latestPartitionsN": 1,
+      "maxReadUncompressedBytes": -1,
+      "filter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  }
+}
