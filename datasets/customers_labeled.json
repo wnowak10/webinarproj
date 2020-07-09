@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1504617592044
+    "lastModifiedOn": 1594308491940
   },
   "creationTag": {
     "versionNumber": 0,
@@ -204,5 +204,7 @@
       "checks": []
     }
   },
-  "customFields": {}
+  "customFields": {
+    "gdpr_contains_personal_data": "YES"
+  }
 }
