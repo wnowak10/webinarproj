@@ -20,5 +20,27 @@
     "key": "f3ZImXVpKc1sV5dftRPQrFUtKYlMRxvD",
     "label": "Key for Web app kk(DpbszYQ)",
     "createdOn": 1594407688677
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    "onBehalf": "rFlpzBa",
+    "id": "8YYcyu4mn97xa7T1",
+    "key": "ZD89IeT4fDXa0jfw855B29puVKi3rOba",
+    "label": "Key for Web app hi(rFlpzBa)",
+    "createdOn": 1594407739309
   }
 ]
