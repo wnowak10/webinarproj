@@ -21,7 +21,7 @@ df = df.set_index(df['customerID'], drop = True)
 df = df[['age_first_order','pages_visited_avg']]
 
 # Make plot 
-p = figure()
+p = figure( plot_height=250)
 x = df.age_first_order
 y = df.pages_visited_avg
 p.scatter(x,y)
