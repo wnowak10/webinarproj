@@ -12,6 +12,7 @@ x = np.linspace(0, 4*np.pi, N)
 y = np.sin(x)
 source = ColumnDataSource(data=dict(x=x, y=y))
 
+import tsne
 
 # Set up plot
 # Access dataset
