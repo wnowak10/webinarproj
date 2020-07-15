@@ -27,11 +27,11 @@
   "config": {},
   "name": "finra",
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1594831287047
+    "lastModifiedOn": 1594831305690
   },
   "creationTag": {
     "versionNumber": 0,
