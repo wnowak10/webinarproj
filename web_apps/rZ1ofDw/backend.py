@@ -13,6 +13,7 @@ y = np.sin(x)
 source = ColumnDataSource(data=dict(x=x, y=y))
 
 import tsne
+import dataiku
 
 # Set up plot
 # Access dataset
