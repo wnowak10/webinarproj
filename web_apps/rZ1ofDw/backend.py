@@ -27,6 +27,12 @@ x = df.age_first_order
 y = df.pages_visited_avg
 p.scatter(x,y)
 
+
+from bokeh.io import curdoc
+from bokeh.layouts import row, widgetbox
+curdoc().add_root(row(p))
+
+
 # show(p)
 # Set up plot
 # Access dataset
