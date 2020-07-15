@@ -15,8 +15,22 @@ source = ColumnDataSource(data=dict(x=x, y=y))
 import dataiku
 mydataset = dataiku.Dataset("customers_labeled")
 
-import tsne
 
+df = mydataset.get_dataframe(limit = dataset_limit)
+df = df.set_index(df['customerID'], drop = True)
+df_orig = df.copy()
+
+# Get the column names
+numerical_columns = list(df.select_dtypes(include=[np.number]).columns)
+categorical_columns = list(df.select_dtypes(include=[object]).columns)
+date_columns = list(df.select_dtypes(include=['<M8[ns]']).columns)
+
+# Print a quick summary of what we just loaded
+print "Loaded dataset"
+print "   Rows: %s" % df.shape[0]
+print "   Columns: %s (%s num, %s cat, %s date)" % (df.shape[1], 
+                                                    len(numerical_columns), len(categorical_columns),
+                                                    len(date_columns))
 
 
 
