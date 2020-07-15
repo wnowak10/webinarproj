@@ -1,9 +1,9 @@
 import numpy as np
 
 from bokeh.io import curdoc
-from bokeh.layouts import row, widgetbox
-from bokeh.models import ColumnDataSource
-from bokeh.models.widgets import Slider, TextInput
+# from bokeh.layouts import row, widgetbox
+# from bokeh.models import ColumnDataSource
+# from bokeh.models.widgets import Slider, TextInput
 from bokeh.plotting import figure
 
 # # Set up data
