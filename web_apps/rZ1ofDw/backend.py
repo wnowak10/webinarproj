@@ -12,10 +12,16 @@ x = np.linspace(0, 4*np.pi, N)
 y = np.sin(x)
 source = ColumnDataSource(data=dict(x=x, y=y))
 
+TOOLTIPS = [
+    ("index", "$index"),
+    ("(x,y)", "($x, $y)"),
+    ("desc", "@desc"),
+]
 
 # Set up plot
 plot = figure(plot_height=400, plot_width=400, title="my sine wave",
               tools="crosshair,pan,reset,save,wheel_zoom",
+              tooltips = TOOLTIPS,
               x_range=[0, 4*np.pi], y_range=[-2.5, 2.5])
 
 plot.line('x', 'y', source=source, line_width=3, line_alpha=0.6)
