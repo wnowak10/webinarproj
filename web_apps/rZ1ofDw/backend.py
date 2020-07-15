@@ -29,11 +29,13 @@ p.scatter(x,y)
 
 from bokeh.io import curdoc
 from bokeh.layouts import row, widgetbox
-curdoc().add_root(row(p, inputs))
+
 
 text = TextInput(title="title", value='sine wave')
 
 inputs = widgetbox(text)
+
+
 
 # Give FIeld to input ID if they know it
 # Or simply highlight point using toolip.
