@@ -36,7 +36,7 @@ y = df.pages_visited_avg
 
 plot = figure(plot_height=400, plot_width=400, title="my sine wave",
               tools="crosshair,pan,reset,save,wheel_zoom",
-              x,y)
+              x=x,y=y)
 
 from bokeh.models import HoverTool
 
