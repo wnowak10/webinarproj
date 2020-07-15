@@ -52,7 +52,7 @@ plot.tools.append(hover)
 
 
 
-plot.line('x', 'y', source=source, line_width=3, line_alpha=0.6)
+# plot.line('x', 'y', source=source, line_width=3, line_alpha=0.6)
 
 
 # Set up widgets
