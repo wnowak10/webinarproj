@@ -23,6 +23,8 @@ df = df[['age_first_order','pages_visited_avg']]
 
 # Make plot 
 p = figure( plot_height=250)
-x = df.age_first_order
-y = df.pages_visited_avg
+x = [1,2,3]
+y = [1,2,3]
+# x = df.age_first_order
+# y = df.pages_visited_avg
 p.scatter(x,y)
