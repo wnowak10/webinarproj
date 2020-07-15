@@ -7,14 +7,16 @@ from bokeh.models.widgets import Slider, TextInput
 from bokeh.plotting import figure
 
 # Set up data
-N = 200
-x = np.linspace(0, 4*np.pi, N)
-y = np.sin(x)
-source = ColumnDataSource(data=dict(x=x, y=y))
+DATASET_NAME = 'customers_labeled'
 
+# Get dataset
 import dataiku
-mydataset = dataiku.Dataset("customers_labeled")
+df = dataiku.Dataset(DATASET_NAME)
 
+# Run TSNE
+# To do -- copy code from notebook
+
+# 
 
 df = mydataset.get_dataframe(limit = 10000)
 df = df.set_index(df['customerID'], drop = True)
