@@ -21,13 +21,12 @@ df = df.set_index(df['customerID'], drop = True)
 df = df[['age_first_order','pages_visited_avg']]
 
 # Make plot 
-p = figure()
+# p = figure()
 x = df.age_first_order
 y = df.pages_visited_avg
-p.circle(x, y, size=10, color='red', legend='circle')
-from bokeh.plotting import figure, output_file, show
+df.plot()
 
-show(p)
+# show(p)
 # Set up plot
 # Access dataset
 # Run PCA
