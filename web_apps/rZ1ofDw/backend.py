@@ -40,7 +40,7 @@ hover.tooltips = [
     ("Roughness", "@y_values nm"),
 ]
 
-plot.tools.append(hover)
+p.tools.append(hover)
 
 text = TextInput(title="title", value='sine wave')
 
