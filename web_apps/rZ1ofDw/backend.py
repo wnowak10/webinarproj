@@ -12,6 +12,8 @@ DATASET_NAME = 'customers_labeled'
 # Get dataset
 import dataiku
 df = dataiku.Dataset(DATASET_NAME)
+df = mydataset.get_dataframe(limit = dataset_limit)
+df = df.set_index(df['customerID'], drop = True)
 
 # Run TSNE
 # To do -- copy code from notebook
