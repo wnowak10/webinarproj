@@ -2,7 +2,7 @@ import numpy as np
 
 # from bokeh.layouts import row, widgetbox
 # from bokeh.models import ColumnDataSource
-# from bokeh.models.widgets import Slider, TextInput
+from bokeh.models.widgets import Slider, TextInput
 from bokeh.plotting import figure
 
 
