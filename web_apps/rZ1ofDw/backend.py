@@ -16,7 +16,7 @@ import dataiku
 mydataset = dataiku.Dataset("customers_labeled")
 
 
-df = mydataset.get_dataframe(limit = dataset_limit)
+df = mydataset.get_dataframe(limit = 10000)
 df = df.set_index(df['customerID'], drop = True)
 df_orig = df.copy()
 
