@@ -1,30 +1,19 @@
 import numpy as np
 
-from bokeh.io import curdoc
-# from bokeh.layouts import row, widgetbox
-# from bokeh.models import ColumnDataSource
-# from bokeh.models.widgets import Slider, TextInput
-from bokeh.plotting import figure
+from bokeh.plotting import figure, output_file, show
 
+N = 4000
+x = np.random.random(size=N) * 100
+y = np.random.random(size=N) * 100
+radii = np.random.random(size=N) * 1.5
+colors = [
+    "#%02x%02x%02x" % (int(r), int(g), 150) for r, g in zip(50+2*x, 30+2*y)
+]
 
-# # Set up data
-DATASET_NAME = 'customers_labeled'
+TOOLS="hover,crosshair,pan,wheel_zoom,zoom_in,zoom_out,box_zoom,undo,redo,reset,tap,save,box_select,poly_select,lasso_select,"
 
-# # Get dataset
-import dataiku
-df = dataiku.Dataset(DATASET_NAME)
-df = df.get_dataframe(limit = 10000)
-df = df.set_index(df['customerID'], drop = True)
+p = figure(tools=TOOLS)
 
-# Run TSNE
-# To do -- copy code from notebook
-# For now, just do this to make a plot
-df = df[['age_first_order','pages_visited_avg']]
-
-# Make plot 
-p = figure( plot_height=250)
-x = [1,2,3]
-y = [1,2,3]
-# x = df.age_first_order
-# y = df.pages_visited_avg
-p.scatter(df, x,y)
+p.scatter(x, y, radius=radii,
+          fill_color=colors, fill_alpha=0.6,
+          line_color=None)
