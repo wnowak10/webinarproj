@@ -1,4 +1,4 @@
-mydataset = dataiku.Dataset("customers_labeled")
+
 
 # Load the first lines.
 # You can also load random samples, limit yourself to some columns, or only load
