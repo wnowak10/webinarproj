@@ -12,8 +12,13 @@ x = np.linspace(0, 4*np.pi, N)
 y = np.sin(x)
 source = ColumnDataSource(data=dict(x=x, y=y))
 
-import tsne
 import dataiku
+mydataset = dataiku.Dataset("customers_labeled")
+
+import tsne
+
+
+
 
 # Set up plot
 # Access dataset
