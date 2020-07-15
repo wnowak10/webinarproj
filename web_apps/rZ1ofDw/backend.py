@@ -7,23 +7,23 @@ from bokeh.models.widgets import Slider, TextInput
 from bokeh.plotting import figure
 
 # # Set up data
-# DATASET_NAME = 'customers_labeled'
+DATASET_NAME = 'customers_labeled'
 
 # # Get dataset
 # import dataiku
-# df = dataiku.Dataset(DATASET_NAME)
-# df = df.get_dataframe(limit = 10000)
-# df = df.set_index(df['customerID'], drop = True)
+df = dataiku.Dataset(DATASET_NAME)
+df = df.get_dataframe(limit = 10000)
+df = df.set_index(df['customerID'], drop = True)
 
-# # Run TSNE
-# # To do -- copy code from notebook
-# # For now, just do this to make a plot
-# df = df[['age_first_order','pages_visited_avg']]
+# Run TSNE
+# To do -- copy code from notebook
+# For now, just do this to make a plot
+df = df[['age_first_order','pages_visited_avg']]
 
-# # Make plot 
-# # p = figure()
-# x = df.age_first_order
-# y = df.pages_visited_avg
+# Make plot 
+# p = figure()
+x = df.age_first_order
+y = df.pages_visited_avg
 # df.plot()
 
 # show(p)
