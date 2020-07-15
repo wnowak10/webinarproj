@@ -6,19 +6,6 @@ from bokeh.io import curdoc
 # from bokeh.models.widgets import Slider, TextInput
 from bokeh.plotting import figure
 
-from bokeh.sampledata.autompg import autompg
-df = autompg
-column = 'hp'
-
-# Uncomment the following to read your own dataset
-#dataset = dataiku.Dataset("YOUR_DATASET_NAME_HERE")
-#df = dataset.get_dataframe()
-#column = "YOUR_COLUMN_NAME"
-
-value_counts = df[column].value_counts(bins=8, sort=False)
-values = value_counts.index.map(str).values
-
-hist = figure(x_range=values, plot_height=250)
 
 # # Set up data
 DATASET_NAME = 'customers_labeled'
