@@ -32,10 +32,6 @@ from bokeh.layouts import row, widgetbox
 curdoc().add_root(row(p))
 
 
-# show(p)
-# Set up plot
-# Access dataset
-# Run PCA
 # Give FIeld to input ID if they know it
 # Or simply highlight point using toolip.
 
