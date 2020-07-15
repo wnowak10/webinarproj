@@ -35,7 +35,7 @@ text = TextInput(title="title", value='sine wave')
 
 inputs = widgetbox(text)
 
-
+curdoc().add_root(row(p, inputs))
 
 # Give FIeld to input ID if they know it
 # Or simply highlight point using toolip.
