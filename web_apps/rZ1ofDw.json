@@ -4,7 +4,7 @@
   "params": {
     "autoStartBackend": false,
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "USE_BUILTIN_MODE"
     },
     "infra": {
       "containerSelection": {
@@ -27,11 +27,11 @@
   "config": {},
   "name": "dimreduction",
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1594830063043
+    "lastModifiedOn": 1594830076411
   },
   "creationTag": {
     "versionNumber": 0,
