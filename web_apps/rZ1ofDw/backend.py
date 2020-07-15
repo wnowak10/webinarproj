@@ -33,6 +33,8 @@ curdoc().add_root(row(p))
 
 text = TextInput(title="title", value='sine wave')
 
+inputs = widgetbox(text)
+
 # Give FIeld to input ID if they know it
 # Or simply highlight point using toolip.
 
