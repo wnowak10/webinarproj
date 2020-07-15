@@ -36,7 +36,7 @@ from bokeh.plotting import figure
 
 plot = figure(plot_height=400, plot_width=400, title="my sine wave",
               tools="crosshair,pan,reset,save,wheel_zoom",
-              x_range=[0, 4*np.pi], y_range=[-2.5, 2.5])
+              x,y)
 
 from bokeh.models import HoverTool
 
