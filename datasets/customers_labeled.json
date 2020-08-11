@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1594308491940
+    "lastModifiedOn": 1597169607763
   },
   "creationTag": {
     "versionNumber": 0,
@@ -110,11 +110,11 @@
         "type": "string"
       },
       {
-        "name": "ip_address_country",
+        "name": "ip_address_geopoint",
         "type": "string"
       },
       {
-        "name": "ip_address_geopoint",
+        "name": "ip_address_country",
         "type": "string"
       },
       {
