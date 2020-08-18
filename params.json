@@ -122,7 +122,7 @@
       }
     }
   },
-  "name": "103: Machine Learning (Tutorial) for Administrator (r)",
+  "name": "ML branch with R",
   "imgPattern": 4,
   "metrics": {
     "probes": [],
@@ -179,11 +179,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597770586283
+    "lastModifiedOn": 1597770632518
   },
   "creationTag": {
     "versionNumber": 0,
