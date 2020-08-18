@@ -122,9 +122,10 @@
       "concat": false,
       "type": "double",
       "sum2": false,
-      "avg": false,
+      "avg": true,
       "countDistinct": false,
       "min": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
@@ -145,6 +146,10 @@
           },
           {
             "name": "pages_visited_avg",
+            "type": "double"
+          },
+          {
+            "name": "total_avg",
             "type": "double"
           },
           {
