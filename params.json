@@ -180,11 +180,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597770505425
+    "lastModifiedOn": 1597774305811
   },
   "creationTag": {
     "versionNumber": 0,
@@ -206,6 +206,21 @@
     "gdpr_forbidden_connections": []
   },
   "checklists": {
-    "checklists": []
+    "checklists": [
+      {
+        "id": "b61aa",
+        "title": "Todo list",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": false,
+            "text": "manage to dos",
+            "createdOn": 1597774305757,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          }
+        ]
+      }
+    ]
   }
 }
