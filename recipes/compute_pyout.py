@@ -7,7 +7,7 @@ from dataiku import pandasutils as pdu
 customers_labeled = dataiku.Dataset("customers_labeled")
 customers_labeled_df = customers_labeled.get_dataframe()
 
-print('hi')
+print('hi, webinar attendees!')
 
 # Compute recipe outputs from inputs
 # TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
