@@ -1,115 +1,165 @@
 {
-  "computedColumns": [], 
-  "engineParams": {
-    "hive": {
-      "addDkuUdf": false, 
-      "executionEngine": "HIVECLI_LOCAL", 
-      "hiveconf": [], 
-      "inheritConf": "default", 
-      "skipPrerunValidate": false
-    }, 
-    "impala": {
-      "forceStreamMode": true
-    }, 
-    "lowerCaseSchemaIfEngineRequiresIt": true, 
-    "sparkSQL": {
-      "overwriteOutputSchema": false, 
-      "pipelineAllowMerge": true, 
-      "pipelineAllowStart": true, 
-      "readParams": {
-        "map": {}
-      }, 
-      "sparkConfig": {
-        "conf": [], 
-        "inheritConf": "default"
-      }, 
-      "useGlobalMetastore": false
-    }
-  }, 
-  "enlargeYourBits": true, 
-  "globalCount": true, 
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
   "keys": [
     {
-      "column": "customer_id", 
-      "type": "string"
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "customer_id",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "stddev": false,
+      "first": false
     }
-  ], 
-  "outputColumnNameOverrides": {
-    "order_date_min": "first_order_date"
-  }, 
-  "postFilter": {
-    "distinct": false, 
-    "enabled": false
-  }, 
-  "preFilter": {
-    "distinct": false, 
-    "enabled": false
-  }, 
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true,
+      "useGlobalMetastore": false,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "conf": [],
+        "inheritConf": "default"
+      }
+    }
+  },
+  "globalCount": true,
   "values": [
     {
-      "avg": false, 
-      "column": "order_date", 
-      "count": false, 
-      "countDistinct": false, 
-      "first": false, 
-      "last": false, 
-      "max": false, 
-      "min": true, 
-      "sum": false, 
-      "sum2": false, 
-      "type": "string"
-    }, 
+      "last": false,
+      "max": false,
+      "column": "order_date",
+      "count": false,
+      "$idx": 0,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "sum2": false,
+      "avg": false,
+      "countDistinct": false,
+      "min": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    },
     {
-      "avg": true, 
-      "column": "pages_visited", 
-      "count": false, 
-      "countDistinct": false, 
-      "first": false, 
-      "last": false, 
-      "max": false, 
-      "min": false, 
-      "sum": false, 
-      "sum2": false, 
-      "type": "bigint"
-    }, 
+      "last": false,
+      "max": false,
+      "column": "pages_visited",
+      "count": false,
+      "$idx": 1,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "sum2": false,
+      "avg": true,
+      "countDistinct": false,
+      "min": false,
+      "stddev": false,
+      "first": false
+    },
     {
-      "avg": false, 
-      "column": "order_id", 
-      "count": false, 
-      "countDistinct": false, 
-      "first": false, 
-      "last": false, 
-      "max": false, 
-      "min": false, 
-      "sum": false, 
-      "sum2": false, 
-      "type": "string"
-    }, 
+      "last": false,
+      "max": false,
+      "column": "order_id",
+      "count": false,
+      "$idx": 2,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "sum2": false,
+      "avg": false,
+      "countDistinct": false,
+      "min": false,
+      "stddev": false,
+      "first": false
+    },
     {
-      "avg": false, 
-      "column": "tshirt_category", 
-      "count": false, 
-      "countDistinct": false, 
-      "first": false, 
-      "last": false, 
-      "max": false, 
-      "min": false, 
-      "sum": false, 
-      "sum2": false, 
-      "type": "string"
-    }, 
+      "last": false,
+      "max": false,
+      "column": "tshirt_category",
+      "count": false,
+      "$idx": 3,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "sum2": false,
+      "avg": false,
+      "countDistinct": false,
+      "min": false,
+      "stddev": false,
+      "first": false
+    },
     {
-      "avg": false, 
-      "column": "total", 
-      "count": false, 
-      "countDistinct": false, 
-      "first": false, 
-      "last": false, 
-      "max": false, 
-      "min": false, 
-      "sum": true, 
-      "sum2": false, 
-      "type": "double"
+      "last": false,
+      "max": false,
+      "column": "total",
+      "count": false,
+      "$idx": 4,
+      "sum": true,
+      "concat": false,
+      "type": "double",
+      "sum2": false,
+      "avg": false,
+      "countDistinct": false,
+      "min": false,
+      "stddev": false,
+      "first": false
     }
-  ]
+  ],
+  "enlargeYourBits": true,
+  "outputColumnNameOverrides": {
+    "order_date_min": "first_order_date"
+  },
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Text",
+            "name": "customer_id",
+            "type": "string"
+          },
+          {
+            "name": "pages_visited_avg",
+            "type": "double"
+          },
+          {
+            "name": "total_sum",
+            "type": "double"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  }
 }
