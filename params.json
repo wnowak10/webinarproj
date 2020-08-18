@@ -122,7 +122,7 @@
       }
     }
   },
-  "name": "103: Machine Learning (Tutorial) for Administrator",
+  "name": "103: Machine Learning (Tutorial) for Administrator (r_branch)",
   "imgPattern": 4,
   "metrics": {
     "probes": [],
@@ -179,11 +179,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597774735220
+    "lastModifiedOn": 1597774737835
   },
   "creationTag": {
     "versionNumber": 0,
@@ -193,7 +193,7 @@
     "lastModifiedOn": 1492181307419
   },
   "description": "# Welcome to the third DSS tutorial\n\n\u003cp class\u003d\"text-center\"\u003e\n   \u003ca href\u003d\"https://www.dataiku.com/learn/guide/tutorials/machine-learning.html\" target\u003d\"_blank\" class\u003d\"btn btn-datasets-color btn-cta-big-mod\"\u003e\u003ci class\u003d\"icon-dku-sample_project\" class\u003d\"btn-cta-big-mod-icon\" /\u003e\u0026nbsp;Start learning\n  \u003c/a\u003e\n\u003c/p\u003e\n\nIn this tutorial, we will create your first machine learning model. We will analyze the historical orders data of a fictional T-shirt making company called \"Haiku T-Shirt\".\n\nWe will learn step-by-step how to predict whether a new customer will become a high-value customer, based on the information gathered during their first purchase.",
-  "shortDesc": "Build your first predictive model",
+  "shortDesc": "Build your first predictive model\nThe project *103_MACHINE_LEARNING_TUTORIAL_FOR_ADMINISTRATOR_R_BRANCH* was copied from *DKU_TUTORIAL_ML_3* by Administrator on Aug 18th 2020",
   "tags": [
     "tutorial",
     "duplicated"
