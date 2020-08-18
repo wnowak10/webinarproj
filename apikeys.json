@@ -13,11 +13,12 @@
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
       "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
     },
     "onBehalf": "DpbszYQ",
     "id": "i92HD3A4On4GPrgG",
-    "key": "f3ZImXVpKc1sV5dftRPQrFUtKYlMRxvD",
+    "key": "UIvgeOiVL5H7mPXfiIMuTqURBjR6IS1z",
     "label": "Key for Web app kk(DpbszYQ)",
     "createdOn": 1594407688677
   },
@@ -35,11 +36,12 @@
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
       "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
     },
     "onBehalf": "rFlpzBa",
     "id": "8YYcyu4mn97xa7T1",
-    "key": "ZD89IeT4fDXa0jfw855B29puVKi3rOba",
+    "key": "g3YJRS2wT1g0E3DyztSBWsODm7aDwmpd",
     "label": "Key for Web app hi(rFlpzBa)",
     "createdOn": 1594407739309
   }

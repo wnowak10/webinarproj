@@ -27,14 +27,18 @@
         "initialReplicas": 1,
         "hpa": false,
         "hpaTargetCPUPercent": 0,
+        "hpaMetrics": [],
         "hpaMinPods": 0,
-        "hpaMaxPods": 0
-      }
-    }
+        "hpaMaxPods": 0,
+        "hpaAnnotations": []
+      },
+      "deploymentModifier": {}
+    },
+    "forceAuthentication": false
   },
   "config": {},
   "name": "kk",
-  "apiKey": "f3ZImXVpKc1sV5dftRPQrFUtKYlMRxvD",
+  "apiKey": "UIvgeOiVL5H7mPXfiIMuTqURBjR6IS1z",
   "versionTag": {
     "versionNumber": 1,
     "lastModifiedBy": {
