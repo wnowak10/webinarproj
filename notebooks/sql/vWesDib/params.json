@@ -1,14 +1,28 @@
 {
   "connection": "dku",
   "name": "admin\u0027s notebook on dku",
-  "cells": [],
+  "cells": [
+    {
+      "id": "w9xhrb9zm1g",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1600277070161
+    "lastModifiedOn": 1600277072426
   },
   "creationTag": {
     "versionNumber": 0,
